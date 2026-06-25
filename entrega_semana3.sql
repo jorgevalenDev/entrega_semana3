@@ -316,7 +316,7 @@
 			VALUES ('978-0000000002', 'Free book', 2020, -10.00);
 			-- ❌ Error 3819: Check constraint 'chk_price' is violated.*/
 -- BONUS
-CREATE TABLE reviews (
+/*CREATE TABLE reviews (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
     book_id INT NOT NULL,
@@ -327,4 +327,4 @@ CREATE TABLE reviews (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE,
     UNIQUE (user_id, book_id)   -- un usuario reseña un libro una sola vez
-);
+);*/
